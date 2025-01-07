@@ -97,7 +97,7 @@ def show_sankey(df, *cols, vals=None, **kwargs):
 
 def main():
     # 1. convert data into pandas dataframe
-    df = pd.read_json('/Users/Diya/Downloads/ds3500/hw2/artists.json')
+    df = pd.read_json('artists.json')
 
     # ensure df only consists of nationality, gender and decade (int)
     artists_df = df[['Nationality', 'Gender']]
